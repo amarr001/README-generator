@@ -33,11 +33,12 @@ inquirer.prompt([
     },
     {
     message:"Include step by step guide to use your project:",
-    name: "Usage"
+    name: "usage"
     }
 ]).then(data => {
 
     let InfoStr = "";
+    let contentTable = "# Table of contents";
 
     //Project info
 
@@ -47,15 +48,25 @@ inquirer.prompt([
     
     //Installation
     if(data.installation){
-        InfoStr += data.installation + "\n"
+        InfoStr += `# Installation \n ${data.installation}  \n`
+        contentTable += `\n * [Installation](#${data.installation}) \n`
+    }
+
+    //Usage
+    if(data.usage){
+        InfoStr += `# How to use \n ${data.usage} \n`
+        contentTable += `\n * [How to use](#${data.usage}) \n` 
     }
 
     //Testing
     if(data.testing){
-        InfoStr += data.testing + "\n"
+        InfoStr += `# Testing \n ${data.testing} \n`
+        contentTable += `\n * [Testing](#${data.testing}) \n` 
     }
 
-  fs.writeFile("README.md", InfoStr , function(err) {
+    const fileSections = InfoStr + contentTable;
+
+  fs.writeFile("README.md", fileSections , function(err) {
 
     if (err) {
       return console.log(err);
