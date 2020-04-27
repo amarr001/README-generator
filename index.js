@@ -1,7 +1,7 @@
 var inquirer = require("inquirer");
 var fs = require('fs');
 
-inquirer.prompt([
+ inquirer.prompt([
     {
     name: "username",
     message: "Enter your GitHub username"
@@ -36,47 +36,7 @@ inquirer.prompt([
     name: "usage"
     }
 ]).then(data => {
- 
-    const fileSections = 
-    `
-      # ${data.title}
-      ​
-      ## Description
-      ​
-      ${data.description}
-      ​
-      ## Table of Contents 
-      ​
-      * [Installation](#installation)
-      ​
-      * [Usage](#usage)
-      ​
-      * [License](#license)
-      ​
-      * [Contributing](#contributing)
-      ​
-      * [Tests](#tests)
-      ​
-      * [Questions](#questions)
-      ​
-      ## Installation
-      ​
-      To install necessary dependencies, run the following command:
-      `;
-    
-      fs.writeFile("README.md", fileSections , function(err) {
-
-        if (err) {
-          return console.log(err);
-        }
-    
-        console.log("Success!");
-    
-      });
-    });
-//JSON.stringify(data, null, '\t')*/
-
-    /*let InfoStr = "";
+    let InfoStr = "";
     let contentTable = "# Table of contents";
 
     //Project info
@@ -103,4 +63,19 @@ inquirer.prompt([
         contentTable += `\n * [Testing](#${data.testing}) \n` 
     }
 
-    const fileSections = InfoStr + contentTable;*/
+    const fileSections = contentTable + InfoStr;
+   
+    fs.writeFile("README.md", fileSections , function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+    
+        console.log("Success!");
+    
+      });
+    });
+    
+    
+
+
