@@ -1,14 +1,14 @@
 # Table of contents
- * [Installation](#jncjn) 
+ * [Installation](#Run the following command: node.index.js) 
 
- * [How to use](#cndkcn) 
+ * [How to use](#Follow the installation guide; answer the prompts in your command line; uplo) 
 
- * [Testing](#jnnjcne) 
-# inkna 
- jnkdncjn 
+ * [Testing](#Testing) 
+# README Generator 
+ Command line application that prompts the user and generates a project README 
 # Installation 
- jncjn  
+ Run the following command: node.index.js  
 # How to use 
- cndkcn 
+ Follow the installation guide; answer the prompts in your command line; uplo 
 # Testing 
- jnnjcne 
+ Testing 
