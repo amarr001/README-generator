@@ -1,16 +1,16 @@
-# lalala 
- kakaka 
+# README Generator 
+ Command line application that prompts the user and generates a project README 
 # Installation 
- jdjdjd  
+ Run the following command: node.index.js  
 # How to use 
- lalala  
+ Follow the installation guide; answer the prompts in your command line; upload the generated README.md file to your GitHub repository  
 # Testing 
- jjdjd  
+ Testing  
 # License 
  MIT  
 # Table of Contents
- * [How to use](#lalala) 
+ * [How to use](#Follow the installation guide; answer the prompts in your command line; upload the generated README.md file to your GitHub repository) 
 
- * [Testing](#jjdjd) 
+ * [Testing](#Testing) 
 
  * [License](#MIT) 
