@@ -1,16 +1,16 @@
-# README Generator 
- Command line application that prompts the user and generates a project README 
+# lalala 
+ kakaka 
 # Installation 
- Run the following command: node.index.js  
+ jdjdjd  
 # How to use 
- Follow the installation guide; answer the prompts in your command line; upload the generated README.md file to your GitHub repository  
+ lalala  
 # Testing 
- Testing  
+ jjdjd  
 # License 
  MIT  
 # Table of Contents
- * [Usage](#Follow the installation guide; answer the prompts in your command line; upload the generated README.md file to your GitHub repository) 
+ * [How to use](#lalala) 
 
- * [Testing](#Testing) 
+ * [Testing](#jjdjd) 
 
  * [License](#MIT) 
