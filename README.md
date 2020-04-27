@@ -1,14 +1,14 @@
 # Table of contents
- * [Installation](#Run the following command: node.index.js) 
+ * [Installation](#installation}) 
 
- * [How to use](#Follow the installation guide; answer the prompts in your command line; uplo) 
+ * [How to use](#usage}) 
 
- * [Testing](#Testing) 
+ * [Testing](#testing}) 
 # README Generator 
  Command line application that prompts the user and generates a project README 
 # Installation 
  Run the following command: node.index.js  
 # How to use 
- Follow the installation guide; answer the prompts in your command line; uplo 
+ Follow the installation guide; answer the prompts in your command line; upload the generated README file to your repository 
 # Testing 
  Testing 
