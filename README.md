@@ -1,10 +1,12 @@
 {
 	"username": "amarr001",
-	"title": "README generator",
-	"description": "keine ahnnung",
-	"testing": "lala",
-	"instalation": "lala",
-	"value": [
+	"title": "Readme Generator",
+	"description": "jaja",
+	"testing": "icndisnvlsdknvo",
+	"installation": "sdhcdnsl",
+	"license": [
 		"MIT"
-	]
+	],
+	"contributing": "cbdjcnjd",
+	"Usage": "xsx"
 }
