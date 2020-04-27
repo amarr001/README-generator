@@ -20,7 +20,7 @@ inquirer.prompt([
     },
     {
     message: "How would you install this project?",
-    name: "instalation"
+    name: "installation"
     },
     {
     type: 'checkbox',
@@ -39,9 +39,30 @@ inquirer.prompt([
     message:"Include step by step guide to use your project:",
     name: "Usage"
     }
-]).then(function(data) {
+]).then(data => {
 
-  fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
+    let InfoStr = "";
+
+    //Project info
+
+    if(data.title){
+    InfoStr += `## ${data.title} \n`
+    }
+    
+    //Installation
+    if(data.installation){
+        InfoStr += data.installation + "\n"
+    }
+
+    //Testing
+    if(data.testing){
+        InfoStr += data.testing + "\n"
+    }
+
+    
+
+
+  fs.writeFile("README.md", InfoStr , function(err) {
 
     if (err) {
       return console.log(err);
@@ -51,3 +72,5 @@ inquirer.prompt([
 
   });
 });
+
+//JSON.stringify(data, null, '\t')
