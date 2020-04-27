@@ -36,8 +36,47 @@ inquirer.prompt([
     name: "usage"
     }
 ]).then(data => {
+ 
+    const fileSections = 
+    `
+      # ${data.title}
+      ​
+      ## Description
+      ​
+      ${data.description}
+      ​
+      ## Table of Contents 
+      ​
+      * [Installation](#installation)
+      ​
+      * [Usage](#usage)
+      ​
+      * [License](#license)
+      ​
+      * [Contributing](#contributing)
+      ​
+      * [Tests](#tests)
+      ​
+      * [Questions](#questions)
+      ​
+      ## Installation
+      ​
+      To install necessary dependencies, run the following command:
+      `;
+    
+      fs.writeFile("README.md", fileSections , function(err) {
 
-    let InfoStr = "";
+        if (err) {
+          return console.log(err);
+        }
+    
+        console.log("Success!");
+    
+      });
+    });
+//JSON.stringify(data, null, '\t')*/
+
+    /*let InfoStr = "";
     let contentTable = "# Table of contents";
 
     //Project info
@@ -64,17 +103,4 @@ inquirer.prompt([
         contentTable += `\n * [Testing](#${data.testing}) \n` 
     }
 
-    const fileSections = InfoStr + contentTable;
-
-  fs.writeFile("README.md", fileSections , function(err) {
-
-    if (err) {
-      return console.log(err);
-    }
-
-    console.log("Success!");
-
-  });
-});
-
-//JSON.stringify(data, null, '\t')
+    const fileSections = InfoStr + contentTable;*/
