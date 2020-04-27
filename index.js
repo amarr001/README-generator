@@ -32,10 +32,6 @@ inquirer.prompt([
     initial: 1
     },
     {
-    message: "Give details of your code of conduct, and the process for submitting pull requests",
-    name: "contributing"
-    },
-    {
     message:"Include step by step guide to use your project:",
     name: "Usage"
     }
@@ -46,7 +42,7 @@ inquirer.prompt([
     //Project info
 
     if(data.title){
-    InfoStr += `## ${data.title} \n`
+    InfoStr += `# ${data.title} \n ${data.description} \n`
     }
     
     //Installation
@@ -58,9 +54,6 @@ inquirer.prompt([
     if(data.testing){
         InfoStr += data.testing + "\n"
     }
-
-    
-
 
   fs.writeFile("README.md", InfoStr , function(err) {
 
