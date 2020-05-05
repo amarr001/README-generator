@@ -48,19 +48,19 @@ var fs = require('fs');
     //Installation
     if(data.installation){
         InfoStr += `# Installation \n ${data.installation}  \n`
-        contentTable += `\n * [Installation](#${data.installation}) \n`
+        contentTable += `\n * [Installation](<a href="#Installation">Installation</a>) \n`
     }
 
     //Usage
     if(data.usage){
         InfoStr += `# How to use \n ${data.usage} \n`
-        contentTable += `\n * [How to use](#${data.usage}) \n` 
+        contentTable += `\n * [How to use](#usage) \n` 
     }
 
     //Testing
     if(data.testing){
         InfoStr += `# Testing \n ${data.testing} \n`
-        contentTable += `\n * [Testing](#${data.testing}) \n` 
+        contentTable += `\n * [Testing](#Testing) \n` 
     }
 
     const fileSections = contentTable + InfoStr;
